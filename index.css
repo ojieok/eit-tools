@@ -1,6 +1,6 @@
 body{background-color:rgb(45, 0, 5); margin:0; font-family: 'PT Serif', serif; }
 
-.headerDiv{height:min-content; width:100%;}
+.headerDiv{height:min-content; width:100%; background-color:rgb(0,0,0)}
 
     .topheader{width:100%; padding-top: 0.75%; padding-bottom:0.75%;
            background-color:rgb(226, 24, 51); border-color:rgb(0,0,0);
@@ -10,12 +10,12 @@ body{background-color:rgb(45, 0, 5); margin:0; font-family: 'PT Serif', serif; }
         .umdheader{color:white; text-decoration:none; text-align:center;}
 
 
-    .bottomheader{height:12.5%; display:flex; justify-content:space-between;
+    .bottomheader{height:12.5%; width:90%; margin:auto; display:flex; justify-content:space-between;
         background-color:rgb(1, 0, 0); border-color:rgb(0,0,0); border-color: black;
         font-size:14px;}
 
-        .eitheader{display:flex; flex-direction:flex-start; width:40%; color:rgb(2475, 247, 247); text-decoration:none; align-items:center; 
-            margin-left:75px;  padding:0.5%;}
+        .eitheader{display:flex; flex-direction:flex-start; width:50%; color:rgb(255, 255, 255); text-decoration:none; align-items:center; 
+              padding:0.5%;}
 
             p {margin-top:0; margin-bottom:0;}
             .vertbar{font-size:45px; margin-right:2.5%; margin-left:1%;}
@@ -24,10 +24,10 @@ body{background-color:rgb(45, 0, 5); margin:0; font-family: 'PT Serif', serif; }
             .eitTitle2{font-size:24px; letter-spacing:1.5px;}
 
 
-        .eitmenu{display:flex; flex-direction:flex-end; width:35%; align-items:center; justify-content:center; }
+        .eitmenu{display:flex; flex-direction:flex-end; width:25%; align-items:center; justify-content:center; }
 
             .eitmenu1{position:relative; display:inline-block; margin-right:5%;}
-                .eitmenu1 p{cursor:pointer; color:rgb(120, 120, 120); text-decoration:none;}
+                .eitmenu1 p{cursor:pointer; color:rgb(255, 255, 255, 0.5); text-decoration:none;}
                 .eitmenu1 a{cursor:pointer; color:rgb(120, 120, 120); text-decoration:none;}
                 .caret{color:rgb(90, 90, 90); display:inline-block; 
                     transform:rotate(180deg); transition: transform 0.2s ease-in-out;
@@ -47,7 +47,7 @@ body{background-color:rgb(45, 0, 5); margin:0; font-family: 'PT Serif', serif; }
                 
     
             .eitmenu2{position:relative; display:inline-block;}
-                .eitmenu2 p{cursor:pointer; color:rgb(105, 105, 105); text-decoration:none;}
+                .eitmenu2 p{cursor:pointer; color:rgb(255, 255, 255, 0.5); text-decoration:none;}
                 .eitmenu2 a{cursor:pointer; color:rgb(105, 105, 105); text-decoration:none;}
                 .eitmenu2 p:hover {cursor:pointer; color:rgb(200, 200, 200); transition:0.1s;}
 
@@ -72,22 +72,21 @@ body{background-color:rgb(45, 0, 5); margin:0; font-family: 'PT Serif', serif; }
 
 
 
-            .content{margin:auto; margin-bottom: 100px; margin-top:4.5%; width:90%; font-size:14.5px;}
+            .content{margin:auto; margin-bottom: 100px; margin-top:4.5%; width:85%; font-size:14.5px;}
                 
                     .tools{margin:auto; 
                         display: grid;
                         grid-template-columns: repeat(auto-fill, 15%);
                         justify-content: space-between;
-                        grid-gap: 20px;
+                        grid-gap: 15px;
                         }
 
                     .itemDiv{text-align:center; 
-                         margin-bottom:2%;}
+                         margin-bottom:10%;}
                     
                          
                         
-
-                    .itemDiv img{max-width:80%;}
+                    .itemDiv img{max-width:70%;}
 
                     .itemimg1{margin-bottom:2%;}
                     .itemimg2{margin-bottom:2%; border-radius:30px;}
@@ -105,8 +104,8 @@ body{background-color:rgb(45, 0, 5); margin:0; font-family: 'PT Serif', serif; }
 
 
                         
-                         @media screen and (max-width: 520px) {.eitheader{width:45%;}
-                         .eitheader{width:100%; align-items:center; justify-content:center; float:none; text-align:center;}
+                         @media only screen and (max-width: 520px) {.eitheader{width:45%;}
+                         .eitheader{width:580px; align-items:center; justify-content:center; float:none; text-align:center;}
                          .eitheader p{font-size: 14px;}
                          .vertbar p{font-size:45px;}
                          .eitmenu1, .eitmenu2{display:none;}
@@ -117,28 +116,34 @@ body{background-color:rgb(45, 0, 5); margin:0; font-family: 'PT Serif', serif; }
                          }
 
                         @media screen and (min-width:521px) and (max-width: 750px) {
-                         .eitheader{width:100%; align-items:center; justify-content:center; float:none; text-align:center;}
+                         .eitheader{width:325px; align-items:center; margin:0; justify-content:center; float:none; text-align:center;}
                          .eitheader p{font-size: 14px;}
                          .vertbar p{font-size:45px;}
                          .eitmenu1, .eitmenu2{display:none;}
                          .tools {
-                            grid-template-columns: repeat(auto-fill, minmax(22.5%, 1fr));
+                            grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
                          }
                         }
 
-                         @media screen and (min-width: 751px) and (max-width: 1000px)  {
-                            .eitheader{width:100%; align-items:center; justify-content:center; float:none; text-align:center;}
+                         @media screen and (min-width: 751px) and (max-width: 1099px)  {
+                            .eitheader{width:470px; align-items:center; margin:0;  justify-content:center; float:none; text-align:center;}
                             .eitmenu1, .eitmenu2{display:none;}
                             .tools {
                                 grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
                              }
                          } 
 
-                         @media screen and (min-width: 1001px) and (max-width: 1280px) {
-                         }	
+                         @media screen and (min-width: 1100px) and (max-width: 1400px) {
+                            .tools {
+                                grid-template-columns: repeat(auto-fill, minmax(17.5%, 1fr));
+                             }
+                         }	 
 
-                         @media screen and (min-width: 1500px) {
+                         @media screen and (min-width: 1700px) {
                              .eitmenu{width:25%;}
+                             .tools {
+                                grid-template-columns: repeat(auto-fill, minmax(13%, 1fr));
+                             }
                          } 
                          
 
